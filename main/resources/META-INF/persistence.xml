@@ -7,7 +7,7 @@
         <properties>
             <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/catalog_db"/>
             <property name="hibernate.connection.username" value="postgres"/>
-            <property name="hibernate.connection.password" value="postgres"/>
+            <property name="hibernate.connection.password" value="postgresql"/>
         </properties>
     </persistence-unit>
 </persistence>

@@ -10,9 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class CreateCategoryMain {
+public class CreateCategory {
 
-    public static void main(String[] args) {
+    public static void create() {
 //         Введите название категории: Мониторы
 //         Введите характеристики категории: Производитель, Диагональ, Матрица
 //
@@ -66,17 +66,6 @@ public class CreateCategoryMain {
             category.setOptions(characteristicsList);
 
             manager.getTransaction().commit();
-
-//            Category category = manager.find(Category.class, 12);
-//            List<Characteristics> options = category.getOptions();
-//            for (Characteristics option : options) {
-//                manager.remove(option);
-//            }
-//            manager.remove(category);
-//
-////            Characteristics characteristics = manager.find(Characteristics.class, 10);
-////            manager.remove(characteristics);
-//            manager.getTransaction().commit();
 
         } catch (Exception e) {
             manager.getTransaction().rollback();

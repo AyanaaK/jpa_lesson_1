@@ -11,8 +11,8 @@ import jakarta.persistence.Persistence;
 import java.util.List;
 import java.util.Scanner;
 
-public class CreateProductsMain {
-    public static void main(String[] args) {
+public class CreateProducts {
+    public static void create() {
         //         Введите название продукта: Asus Tuf gaming f15
 //         Введите цену продукта: 680_000
 //         Введите айди категории: 3
@@ -27,8 +27,6 @@ public class CreateProductsMain {
 
         System.out.println("Введите айди категории:");
         Long categoryId = Long.parseLong(scanner.nextLine());
-
-        //scanner.nextLine();
 
         System.out.println("Введите название продукта:");
         String productName = scanner.nextLine();
@@ -52,7 +50,6 @@ public class CreateProductsMain {
             for (Characteristics characteristic : characteristicsList) {
                 System.out.println("Введите значение для " + characteristic.getName());
                 String value = scanner.nextLine();
-                //scanner.nextLine();
 
                 Values values = new Values();
                 values.setCharacteristics(characteristic);

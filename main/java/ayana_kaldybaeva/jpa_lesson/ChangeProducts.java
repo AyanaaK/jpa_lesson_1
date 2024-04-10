@@ -9,8 +9,8 @@ import jakarta.persistence.Persistence;
 import java.util.List;
 import java.util.Scanner;
 
-public class ChangeProductsMain {
-    public static void main(String[] args) {
+public class ChangeProducts {
+    public static void change() {
         EntityManagerFactory factory = Persistence.createEntityManagerFactory("main");
         EntityManager manager = factory.createEntityManager();
 
