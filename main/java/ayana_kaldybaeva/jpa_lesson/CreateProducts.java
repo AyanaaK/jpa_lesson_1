@@ -20,7 +20,7 @@ public class CreateProducts {
 //         1) После ввода названия категории названия продукта и цены в таблице products должна быть
 //         создана новая запись с введённым названием.
 
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("main");
+        EntityManagerFactory factory = EntityManagerFactoryHolder.factory();
         EntityManager manager = factory.createEntityManager();
 
         Scanner scanner = new Scanner(System.in);

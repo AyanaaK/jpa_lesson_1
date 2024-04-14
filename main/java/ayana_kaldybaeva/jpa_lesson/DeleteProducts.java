@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class DeleteProducts {
     public static void delete() {
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("main");
+        EntityManagerFactory factory = EntityManagerFactoryHolder.factory();
         EntityManager manager = factory.createEntityManager();
 
         Scanner scanner = new Scanner(System.in);

@@ -28,7 +28,7 @@ public class CreateCategory {
 //        System.out.println(optionsArray[1]);
 //        System.out.println(optionsArray[2]);
 
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("main");
+        EntityManagerFactory factory = EntityManagerFactoryHolder.factory();
         EntityManager manager = factory.createEntityManager();
 
         Scanner scanner = new Scanner(System.in);
